@@ -11,6 +11,13 @@
   <p>Hello {{world}}!</p>
 </div>
 
+<div ng-init="frameworks = ['Backbone.js', 'Ember.js', 'Knockout.js']">
+  <h3>{{ frameworks.length }} frameworks</h3>
+  <ul>
+    <li ng-repeat="f in frameworks">{{f}}</li>
+  </ul>
+</div>
+
 <div class="footer">
   <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
 </div>
