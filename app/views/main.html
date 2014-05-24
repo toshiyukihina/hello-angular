@@ -7,10 +7,14 @@
   <h3 class="text-muted">hello angular</h3>
 </div>
 
-<div class="jumbotron">
-  <p><input type="text" ng-model="world" /></p>
+<div>
+  <p>
+    <input type="text" ng-model="world" />
+    <button class="btn btn-primary" ng-click="addFramework(world)">Add</button>
+  </p>
   <p>Hello {{world}}!</p>
 </div>
+
 
 <div ng-init="frameworks = ['Backbone.js', 'Ember.js', 'Knockout.js']">
   <h3>{{ frameworks.length }} frameworks</h3>
