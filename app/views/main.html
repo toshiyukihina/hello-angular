@@ -19,7 +19,9 @@
 <div ng-init="frameworks = ['Backbone.js', 'Ember.js', 'Knockout.js']">
   <h3>{{ frameworks.length }} frameworks</h3>
   <ul>
-    <li ng-repeat="f in frameworks">{{f}}</li>
+    <li ng-repeat="f in frameworks">
+      <a href="/#/frameworks/{{f}}">{{f}}</a>
+    </li>
   </ul>
 </div>
 

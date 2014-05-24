@@ -7,4 +7,9 @@ angular.module('helloAngularApp')
       $scope.frameworks.push($scope.world);
       $scope.world = '';
     };
+  })
+  .controller('DescCtrl', function($scope, $routeParams) {
+    $scope.framework = {
+      name: $routeParams.name
+    };
   });

@@ -13,6 +13,10 @@ angular
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
+      .when('/frameworks/:name', {
+        templateUrl: 'views/desc.html',
+        controller: 'DescCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
