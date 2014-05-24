@@ -7,6 +7,12 @@ angular
     'ngSanitize',
     'ngRoute'
   ])
+  .factory('frameworksDataSource', function($q, $timeout) {
+    var frameworks = ['Backbone.js', 'Ember.js', 'Knockout.js'];
+    return function() {
+      return frameworks;
+    };
+  })
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
