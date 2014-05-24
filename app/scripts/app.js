@@ -20,4 +20,9 @@ angular
       .otherwise({
         redirectTo: '/'
       });
+  })
+  .filter('reverse', function() {
+    return function(values) {
+      return values.concat().reverse();
+    };
   });

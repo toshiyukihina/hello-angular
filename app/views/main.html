@@ -18,9 +18,10 @@
 
 <div ng-init="frameworks = ['Backbone.js', 'Ember.js', 'Knockout.js']">
   <h3>{{ frameworks.length }} frameworks</h3>
+  <p><input type="text" ng-model="searchText" /></p>
   <ul>
-    <li ng-repeat="f in frameworks">
-      <a href="/#/frameworks/{{f}}">{{f}}</a>
+    <li ng-repeat="f in frameworks | reverse | filter:searchText">
+      <a href="/#/frameworks/{{f}}">{{f | uppercase}}</a>
     </li>
   </ul>
 </div>
